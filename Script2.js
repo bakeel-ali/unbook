@@ -119,7 +119,7 @@ const translations = {
         txt119 : "Property rights",
         txt120 : "Call Us :",
         txt121 : "This web site designed by",
-        txt122 : "KhababAl_Shahery ",
+        txt122 : "Bakeel Al_Edrisy ",
         txt123 : "All rights reseved by Ibb UN",
 
     },
@@ -245,7 +245,7 @@ const translations = {
         txt119 : "حقوق الملكية",
         txt120 : "اتصل بنا :",
         txt121 : "صمم هذا الموقع بواسطة",
-        txt122 : "خباب الشاهري ",
+        txt122 : " بكيل الادريسي ",
         txt123 : "حقوق النشر والطبع محفوظة لداء جامعة إب",
     },
 };
