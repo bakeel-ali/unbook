@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log_in.css">
+    <title>إنشاء حساب</title>
+    
+</head>
+<body >
+    <div>
+        <!-- <script src="Script.js" ></script>
+        <select class="mt-2">
+            <option value="en" selected data-i18n="txt14">English</option>
+            <option value="ar" data-i18n="txt15">Arabic</option>
+        </select> -->
+    </div>
+    <section>
+        <form action="" method="POST" id="myform">
+            <!-- <script src="Script.js" ></script> -->
+        <h5 data-i18n="txt16">Select language to translate</h5>
+        <select class="mt-2">
+            <option value="en" selected data-i18n="txt14">English</option>
+            <option value="ar" data-i18n="txt15">Arabic</option>
+        </select>
+            <h1 data-i18n="txt1">create acount</h1>
+            <div class="inputbox">
+                <ion-icon name="first-name"></ion-icon>
+                <input type="text" id="name1" required placeholder="first name">
+                <label for="" data-i18n="txt2">first name</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="last-name"></ion-icon>
+                <input type="text" id="name1" required placeholder="second anme">
+                <label for="" data-i18n="txt3"> last name</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email"  placeholder="example:name123@gmail.com" required>
+                <label for="" data-i18n="txt4"> Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" minlength="8" maxlength="15" required placeholder="Password">
+                <label for="" data-i18n="txt5">Password</label>
+
+            </div>
+
+                <div class="inputbox">
+                    <select id="country" name="country"  onchange="updatePhoneNumberPrefix()" required>
+                        <option value="Yemen" selected data-i18n="txt6">Yemen</option>
+                        <option value="Egypt" data-i18n="txt7">Egypt</option>
+                        <option value="Soudia" data-i18n="txt8">Soudia</option>
+                        <option value="Emarat" data-i18n="txt9">Emarat</option>
+                        <!-- إضافة المزيد من الدول هنا -->
+                      </select>
+                      <script>
+                        function updatePhoneNumberPrefix() {
+                          //var phoneInput="+967  ";
+                          var countrySelect = document.getElementById("country");
+                          var phoneInput = document.getElementById("phone");
+                          var selectedCountry = countrySelect.value;
+                         
+                           if (selectedCountry==="Yemen")
+                            { phoneInput.value="  +967 ";
+                          } else if (selectedCountry === "Egypt") {
+                            phoneInput.value = "  +20 ";
+                          } else if (selectedCountry === "Soudia") {
+                            phoneInput.value = "  +966 ";
+                          } else if (selectedCountry === "Emarat") {
+                            phoneInput.value = "  +971 ";
+                          }                          
+                        }
+                        </script>
+                    <ion-icon name="phone"></ion-icon>
+                    <input type="tel" id="phone" value="  +967 " maxlength="16" required>
+                    <label for="" data-i18n="txt10">phone number</label>
+                </div>
+                <div class="forget" id="forget">
+                <label for=""><input type="checkbox" data-i18n="txt11">Save</label>
+               
+            </div>
+            <input type="submit" class="log" value=".OK." data-i18n="txt17">
+            <div class="register">
+                <p data-i18n="txt13">if you have acount</p>
+                <a id="aclass" data-i18n="txt12" href="log.html">Click heare</a>
+            </div>
+        </form>
+    </section>
+    <script>
+        document.getElementById("myform").addEventListener("submit",function(event){
+            event.preventDefault();
+          
+            window.location.href="check.html";            
+        });      
+    </script>
+    <script src="Script.js" ></script>
+</body>
+</html>

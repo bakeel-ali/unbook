@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="log_in.css">
+    <title>تسجيل الدخول</title>
+    <style>
+    section{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+
+</head>
+<body dir="rtl">
+        <section>
+                <form action="" method="POST" id="myform">
+                    <h1>تسجيل الدخول</h1>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" placeholder="Example:name123@gmail.com" id="put" required>
+                        <label for="">البريد الالكتروني</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder="Exmaple:EA%ds&12$" minlength="8" maxlength="15" id="put" required>
+                        <label for="">كلمة المرور</label>
+        
+                    </div>
+                    <div class="forget" id="fort">
+                        <label for=""><input type="checkbox">حفظ</label>
+                        <a href="forget.html"> نسيت كلمة المرور </a>
+                    </div>
+                    <!-- <input type="submit" class="log" value="دخول" > -->
+                    <button  id="login" type="submit" class="log">تسجيل الدخول</button>                
+                    <div class="register">
+                            <p>لإنشاء حساب جديد <a href="sign in.html"> اضغط هنا</a></p>
+                        </div>
+                </form>
+                <br>
+                
+        
+            </section>
+            <script>
+                    document.getElementById("myform").addEventListener("submit",function(event){
+                        event.preventDefault();                                              
+                        window.parent.postMessage({type:"loadNextPage"},"*");
+                    });        
+                </script>
+       
+</body>
+</html>
