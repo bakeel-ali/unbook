@@ -1,9 +1,9 @@
 const translations = {
     en: {
         txt1 : "this Web Site designed by :",
-        txt2 : "1-Khabab Abdo Al_Shahery",
-        txt3 : "2-Ragi Mothana Al_Sarawi ",
-        txt4 : "3-Bakeel Ali Al_Edrisy",
+        txt2 : "1-Bakeel Ali Al_Edrisy",
+        txt3 : "2-Khabab Abduo Al_Shahery ",
+        txt4 : "3-Ragi Shaif Al_Sarawy",
         txt5 : "Home",
         txt6 : "Sections",
         txt7 : "University Courses ",
@@ -125,9 +125,9 @@ const translations = {
     },
     ar: {
         txt1 : "تم تصمصم هذا المشروع بواسطة:",
-        txt2 : "1- خباب عبدة ناجي الشاهري",
-        txt3 : " 2- راجي شايف مثنى الساروي ",
-        txt4 : " 3- بكيل علي عبدالله الإدريسي",
+        txt2 : "1- بكيل علي عبد الله الادريسي",
+        txt3 : " 2- خباب عبد ناجي الشاهري ",
+        txt4 : " 3- راجي شايف مثنى الساروي",
         txt5 : " الرئيسية",
         txt6 : "الأقسام",
         txt7 : "مقررات جامعية ",
